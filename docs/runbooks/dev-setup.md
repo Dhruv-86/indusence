@@ -7,6 +7,16 @@ git pull origin main
 ## Start Feature Work
 git checkout -b feat/<topic>
 
+## Build/Test (Simulator Service)
+cd services/device-simulator-service
+./mvnw test
+cd ../..
+
+## Run (Simulator Service)
+cd services/device-simulator-service
+./mvnw spring-boot:run
+cd ../..
+
 ## End Session
 git add .
 git commit -m "feat: <what changed>"
